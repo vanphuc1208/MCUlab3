@@ -58,6 +58,7 @@ static void MX_TIM2_Init(void);
 /* USER CODE BEGIN 0 */
 void HAL_TIM_PeriodElapsedCallback ( TIM_HandleTypeDef * htim ) {
 	button_reading();
+	timerRun();
 }
 /* USER CODE END 0 */
 

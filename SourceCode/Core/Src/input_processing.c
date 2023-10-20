@@ -9,6 +9,7 @@
 #include "main.h"
 #include "input_reading.h"
 #include "displayLed.h"
+#include "software_timer.h"
 
 enum ButtonState{BUTTON_RELEASED, BUTTON_PRESSED, BUTTON_PRESSED_MORE_THAN_1_SECOND} ;
 enum ButtonState buttonState = BUTTON_RELEASED;
@@ -27,6 +28,7 @@ void fsm_for_input_processing(void){
 		} else {
 			if(is_button_pressed_1s(0)){
 				buttonState = BUTTON_PRESSED_MORE_THAN_1_SECOND;
+				setTimer1(50);
 			}
 		}
 		break;
@@ -34,7 +36,10 @@ void fsm_for_input_processing(void){
 		if(!is_button_pressed(0)){
 			buttonState = BUTTON_RELEASED;
 		}
-		//todo
+		if(timer1_flag==1) {
+			displayLed();
+			setTimer1(50);
+		}
 		break;
 	}
 }
