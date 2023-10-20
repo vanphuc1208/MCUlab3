@@ -1,0 +1,2 @@
+displayLed.c:14:6:clearLed	16	static
+displayLed.c:19:6:displayLed	16	static
