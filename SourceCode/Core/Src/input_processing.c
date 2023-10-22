@@ -6,10 +6,7 @@
  */
 
 
-#include "main.h"
-#include "input_reading.h"
-#include "displayLed.h"
-#include "software_timer.h"
+#include "global.h"
 
 enum ButtonState{BUTTON_RELEASED, BUTTON_PRESSED, BUTTON_PRESSED_MORE_THAN_1_SECOND} ;
 enum ButtonState buttonState = BUTTON_RELEASED;

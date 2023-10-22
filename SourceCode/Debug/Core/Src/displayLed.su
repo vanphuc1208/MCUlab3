@@ -1,2 +1,7 @@
-displayLed.c:14:6:clearLed	16	static
-displayLed.c:19:6:displayLed	16	static
+displayLed.c:10:6:clearAllLed	8	static
+displayLed.c:19:6:displayRed1	8	static
+displayLed.c:25:6:displayYellow1	8	static
+displayLed.c:31:6:displayGreen1	8	static
+displayLed.c:37:6:displayRed2	8	static
+displayLed.c:44:6:displayYellow2	8	static
+displayLed.c:50:6:displayGreen2	8	static

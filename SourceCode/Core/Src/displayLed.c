@@ -7,26 +7,50 @@
 #include "main.h"
 #include "displayLed.h"
 
-uint16_t ledPin[]= {GPIO_PIN_0, GPIO_PIN_1, GPIO_PIN_2, GPIO_PIN_3, GPIO_PIN_4,
-		GPIO_PIN_5, GPIO_PIN_6, GPIO_PIN_7
-};
-int idx=0;
-void clearLed() {
-	for(int i=0;i<8;i++) {
-		HAL_GPIO_WritePin(GPIOA, ledPin[i], SET);
-	}
+void clearAllLed() {
+	HAL_GPIO_WritePin(LED_Red1_GPIO_Port, LED_Red1_Pin, SET);
+	HAL_GPIO_WritePin(LED_Yellow1_GPIO_Port, LED_Yellow1_Pin, SET);
+	HAL_GPIO_WritePin(LED_Green1_GPIO_Port, LED_Green1_Pin, SET);
+	HAL_GPIO_WritePin(LED_Red2_GPIO_Port, LED_Red2_Pin, SET);
+	HAL_GPIO_WritePin(LED_Yellow2_GPIO_Port, LED_Yellow2_Pin, SET);
+	HAL_GPIO_WritePin(LED_Green2_GPIO_Port, LED_Green2_Pin, SET);
 }
-void displayLed(void) {
-	clearLed();
-	for(int i=0;i<8;i++) {
-		if(i==idx) {
-			HAL_GPIO_WritePin(GPIOA, ledPin[i], RESET);
-		}
-		else {
-			HAL_GPIO_WritePin(GPIOA, ledPin[i], SET);
-		}
-	}
-	if(idx>=7) idx=0;
-	else idx++;
+
+void displayRed1() {
+	HAL_GPIO_WritePin(LED_Red1_GPIO_Port, LED_Red1_Pin, RESET);
+	HAL_GPIO_WritePin(LED_Yellow1_GPIO_Port, LED_Yellow1_Pin, SET);
+	HAL_GPIO_WritePin(LED_Green1_GPIO_Port, LED_Green1_Pin, SET);
 }
+
+void displayYellow1() {
+	HAL_GPIO_WritePin(LED_Red1_GPIO_Port, LED_Red1_Pin, SET);
+	HAL_GPIO_WritePin(LED_Yellow1_GPIO_Port, LED_Yellow1_Pin, RESET);
+	HAL_GPIO_WritePin(LED_Green1_GPIO_Port, LED_Green1_Pin, SET);
+}
+
+void displayGreen1() {
+	HAL_GPIO_WritePin(LED_Red1_GPIO_Port, LED_Red1_Pin, SET);
+	HAL_GPIO_WritePin(LED_Yellow1_GPIO_Port, LED_Yellow1_Pin, SET);
+	HAL_GPIO_WritePin(LED_Green1_GPIO_Port, LED_Green1_Pin, RESET);
+}
+
+void displayRed2() {
+	HAL_GPIO_WritePin(LED_Red2_GPIO_Port, LED_Red2_Pin, RESET);
+	HAL_GPIO_WritePin(LED_Yellow2_GPIO_Port, LED_Yellow2_Pin, SET);
+	HAL_GPIO_WritePin(LED_Green2_GPIO_Port, LED_Green2_Pin, SET);
+}
+
+
+void displayYellow2() {
+	HAL_GPIO_WritePin(LED_Red2_GPIO_Port, LED_Red2_Pin, SET);
+	HAL_GPIO_WritePin(LED_Yellow2_GPIO_Port, LED_Yellow2_Pin, RESET);
+	HAL_GPIO_WritePin(LED_Green2_GPIO_Port, LED_Green2_Pin, SET);
+}
+
+void displayGreen2() {
+	HAL_GPIO_WritePin(LED_Red2_GPIO_Port, LED_Red2_Pin, SET);
+	HAL_GPIO_WritePin(LED_Yellow2_GPIO_Port, LED_Yellow2_Pin, SET);
+	HAL_GPIO_WritePin(LED_Green2_GPIO_Port, LED_Green2_Pin, RESET);
+}
+
 
