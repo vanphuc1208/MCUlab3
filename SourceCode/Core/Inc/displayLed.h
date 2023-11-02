@@ -14,4 +14,7 @@ void displayGreen1();
 void displayRed2();
 void displayYellow2();
 void displayGreen2();
+void toggleRed();
+void togglYellow();
+void toggleGreen();
 #endif /* INC_DISPLAYLED_H_ */

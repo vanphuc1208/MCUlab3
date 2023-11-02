@@ -70,8 +70,36 @@ void Error_Handler(void);
 #define LED_Yellow2_GPIO_Port GPIOA
 #define LED_Green2_Pin GPIO_PIN_5
 #define LED_Green2_GPIO_Port GPIOA
+#define SEG0_Pin GPIO_PIN_6
+#define SEG0_GPIO_Port GPIOA
+#define SEG1_Pin GPIO_PIN_7
+#define SEG1_GPIO_Port GPIOA
 #define BUTTON_1_Pin GPIO_PIN_0
 #define BUTTON_1_GPIO_Port GPIOB
+#define BUTTON_2_Pin GPIO_PIN_1
+#define BUTTON_2_GPIO_Port GPIOB
+#define BUTTON_3_Pin GPIO_PIN_2
+#define BUTTON_3_GPIO_Port GPIOB
+#define test_Pin GPIO_PIN_10
+#define test_GPIO_Port GPIOB
+#define SEG2_Pin GPIO_PIN_8
+#define SEG2_GPIO_Port GPIOA
+#define SEG3_Pin GPIO_PIN_9
+#define SEG3_GPIO_Port GPIOA
+#define SEG4_Pin GPIO_PIN_10
+#define SEG4_GPIO_Port GPIOA
+#define SEG5_Pin GPIO_PIN_11
+#define SEG5_GPIO_Port GPIOA
+#define SEG6_Pin GPIO_PIN_12
+#define SEG6_GPIO_Port GPIOA
+#define EN0_Pin GPIO_PIN_3
+#define EN0_GPIO_Port GPIOB
+#define EN1_Pin GPIO_PIN_4
+#define EN1_GPIO_Port GPIOB
+#define EN2_Pin GPIO_PIN_5
+#define EN2_GPIO_Port GPIOB
+#define EN3_Pin GPIO_PIN_6
+#define EN3_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

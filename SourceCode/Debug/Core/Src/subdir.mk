@@ -5,10 +5,10 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Core/Src/display7SEG.c \
 ../Core/Src/displayLed.c \
 ../Core/Src/fsm_normal_state.c \
 ../Core/Src/global.c \
-../Core/Src/input_processing.c \
 ../Core/Src/input_reading.c \
 ../Core/Src/main.c \
 ../Core/Src/software_timer.c \
@@ -19,10 +19,10 @@ C_SRCS += \
 ../Core/Src/system_stm32f1xx.c 
 
 OBJS += \
+./Core/Src/display7SEG.o \
 ./Core/Src/displayLed.o \
 ./Core/Src/fsm_normal_state.o \
 ./Core/Src/global.o \
-./Core/Src/input_processing.o \
 ./Core/Src/input_reading.o \
 ./Core/Src/main.o \
 ./Core/Src/software_timer.o \
@@ -33,10 +33,10 @@ OBJS += \
 ./Core/Src/system_stm32f1xx.o 
 
 C_DEPS += \
+./Core/Src/display7SEG.d \
 ./Core/Src/displayLed.d \
 ./Core/Src/fsm_normal_state.d \
 ./Core/Src/global.d \
-./Core/Src/input_processing.d \
 ./Core/Src/input_reading.d \
 ./Core/Src/main.d \
 ./Core/Src/software_timer.d \

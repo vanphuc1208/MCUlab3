@@ -8,7 +8,6 @@
 #ifndef INC_FSM_NORMAL_STATE_H_
 #define INC_FSM_NORMAL_STATE_H_
 
-void normalState1(void);
-void normalState2(void);
+void normalState(void);
 
 #endif /* INC_FSM_NORMAL_STATE_H_ */

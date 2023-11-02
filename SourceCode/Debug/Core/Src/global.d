@@ -24,7 +24,8 @@ Core/Src/global.o: ../Core/Src/global.c ../Core/Inc/global.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Core/Inc/input_reading.h ../Core/Inc/software_timer.h \
- ../Core/Inc/displayLed.h
+ ../Core/Inc/displayLed.h ../Core/Inc/display7Seg.h \
+ ../Core/Inc/fsm_normal_state.h
 
 ../Core/Inc/global.h:
 
@@ -83,3 +84,7 @@ Core/Src/global.o: ../Core/Src/global.c ../Core/Inc/global.h \
 ../Core/Inc/software_timer.h:
 
 ../Core/Inc/displayLed.h:
+
+../Core/Inc/display7Seg.h:
+
+../Core/Inc/fsm_normal_state.h:
